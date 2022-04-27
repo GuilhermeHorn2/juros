@@ -1,0 +1,13 @@
+double juros(double ini,double mens,double j,int t){
+    double m = 0;
+    double k = ini;
+    for(int i = 0;i < t;i++){
+        m += (k)*(1 + j/100);
+        k += mens;
+        //eu quero a variaçao de m:
+        if(i >= 1){
+            m -= ini;
+        }
+    }
+    return m;
+}
